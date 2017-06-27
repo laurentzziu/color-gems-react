@@ -1,0 +1,14 @@
+@import "variables";
+@import "utilities";
+
+@import "global/fonts";
+
+body {
+  margin: 0;
+  padding: 0;
+  @include body-font;
+}
+
+@include all-headers {
+  @include header-font;
+}

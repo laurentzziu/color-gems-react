@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+
+@mixin header-font {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+@mixin body-font {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica",
+    "Roboto", "Arial", sans-serif;
+}
