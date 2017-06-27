@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100");
+.text-center {
+  text-align: center !important; }
+
+.mt-0 {
+  margin-top: 0; }
+
+.mt-1 {
+  margin-top: 0.25rem; }
+
+.mt-2 {
+  margin-top: 0.5rem; }
+
+.mt-3 {
+  margin-top: 1rem; }
+
+.mt-4 {
+  margin-top: 1.5rem; }
+
+.mt-5 {
+  margin-top: 3rem; }
+
+.mb-0 {
+  margin-bottom: 0; }
+
 body {
   margin: 0;
   padding: 0;
