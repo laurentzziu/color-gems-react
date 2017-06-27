@@ -18,6 +18,16 @@
 
 .mb-0 { margin-bottom: 0; }
 
+.m-3 { margin: 1rem; }
+
+.d-flex { display: flex; }
+
+.flex-wrap {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 // Add percentage of white to a color
 @function tint($color, $percent){

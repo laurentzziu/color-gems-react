@@ -23,6 +23,43 @@
 .mb-0 {
   margin-bottom: 0; }
 
+.m-3 {
+  margin: 1rem; }
+
+.d-flex {
+  display: flex; }
+
+.flex-wrap {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap; }
+
+footer#app-footer {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100; }
+
+.color-box {
+  height: 12rem;
+  width: 12rem;
+  background-color: indigo;
+  border-radius: 3rem;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  transition: all 0.25s ease; }
+  .color-box:hover {
+    position: relative;
+    top: -1rem; }
+  .color-box .color-box-variation {
+    height: 4rem;
+    width: 4rem;
+    z-index: 1; }
+    .color-box .color-box-variation:hover {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 2; }
+
 body {
   margin: 0;
   padding: 0;
