@@ -14,7 +14,7 @@ export default class ColorGems extends Component {
     const colors = this.props.colors;
 
     return (
-      <div className="color-gems-container d-flex flex-wrap">
+      <div className="color-gems-container d-flex flex-wrap justify-content-center mt-5">
       { colors.map((color, index) =>{
         return <ColorGem key={index} color={color} />
       })}

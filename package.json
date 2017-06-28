@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "react": "^15.6.1",
     "react-autobind": "^1.0.6",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.7",

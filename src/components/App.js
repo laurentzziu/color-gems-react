@@ -22,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <div id="app-wrapper" className="container">
+      <div id="app-wrapper" className="container mt-5">
         {/* <Banner > */}
         <Header />
           <main>

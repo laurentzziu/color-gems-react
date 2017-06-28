@@ -3,6 +3,8 @@
 
 @import "global/fonts";
 
+@import "bootstrap/scss/bootstrap";
+
 @import "components/Footer";
 @import "components/ColorGem";
 
@@ -15,3 +17,4 @@ body {
 @include all-headers {
   @include header-font;
 }
+
