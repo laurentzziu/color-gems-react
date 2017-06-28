@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import autoBind from 'react-autobind';
+import { rgba2hex } from '../helpers';
 
 export default class ColorGem extends Component {
   constructor(props) {
