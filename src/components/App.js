@@ -17,7 +17,12 @@ class App extends Component {
   state = {
     // list or grid
     display: 'grid',
-    colorHex: true
+    colorHex: true,
+    copied: false
+  }
+
+  copiedToClipboard(bool = true) {
+    this.setState({ copied: bool });
   }
 
   render() {
@@ -26,7 +31,10 @@ class App extends Component {
         {/* <Banner > */}
         <Header />
           <main>
-            <ColorGems colors={ settings.colors }/>
+            <ColorGems colors={ settings.colors }
+              copiedToClipboard={this.copiedToClipboard}
+              colorHex={this.state.colorHex}
+            />
           </main>
         <Footer />
       </div>
