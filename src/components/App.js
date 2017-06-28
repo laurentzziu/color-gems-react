@@ -4,6 +4,7 @@ import autoBind from 'react-autobind';
 import { settings } from '../settings';
 
 import Header from './Header';
+import HeaderBanner from './HeaderBanner';
 import Footer from './Footer';
 import ColorGems from './ColorGems';
 
@@ -18,25 +19,34 @@ class App extends Component {
     // list or grid
     display: 'grid',
     colorHex: true,
-    copied: false
+    copied: false,
+    hoverColor: '#34e3e4'
   }
 
   copiedToClipboard(bool = true) {
     this.setState({ copied: bool });
   }
 
+  updateHoverColor(color) {
+    this.setState({ hoverColor: color });
+  }
+
   render() {
     return (
-      <div id="app-wrapper" className="container mt-5">
-        {/* <Banner > */}
-        <Header />
-          <main>
-            <ColorGems colors={ settings.colors }
-              copiedToClipboard={this.copiedToClipboard}
-              colorHex={this.state.colorHex}
-            />
-          </main>
-        <Footer />
+      <div id="app-wrapper">
+        <HeaderBanner color={this.state.hoverColor}/>
+        <div className="content-wrapper container mt-5">
+          <Header />
+            <main>
+              <ColorGems colors={settings.colors}
+                copiedToClipboard={this.copiedToClipboard}
+                colorHex={this.state.colorHex}
+                hoverColor={this.state.hoverColor}
+                updateHoverColor={this.updateHoverColor}
+              />
+            </main>
+          <Footer />
+        </div>
       </div>
     );
   }

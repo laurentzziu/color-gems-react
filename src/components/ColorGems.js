@@ -20,6 +20,7 @@ export default class ColorGems extends Component {
                   key={`color-gem-${index}`} color={color}
                   copiedToClipboard={this.props.copiedToClipboard}
                   colorHex={this.props.colorHex}
+                  updateHoverColor={this.props.updateHoverColor}
                 />
       })}
       </div>

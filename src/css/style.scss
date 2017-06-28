@@ -5,8 +5,9 @@
 
 @import "bootstrap/scss/bootstrap";
 
-@import "components/Footer";
-@import "components/ColorGem";
+@import "components/HeaderBanner.scss";
+@import "components/Footer.scss";
+@import "components/ColorGem.scss";
 
 body {
   margin: 0;

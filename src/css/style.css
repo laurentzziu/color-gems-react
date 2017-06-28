@@ -5988,6 +5988,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+#header-banner {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
+
 footer#app-footer {
   font-family: 'Lato', sans-serif;
   font-weight: 100; }
