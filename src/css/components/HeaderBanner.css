@@ -1,7 +1,10 @@
 #header-banner {
-  width: 100%;
-  text-align: center;
   color: white;
   padding: 0.5rem;
-  color: white;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
+  position: fixed;
+  text-align: center;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  top: 0;
+  transition: background-color 0.2s ease, oapcity 0.5s ease;
+  width: 100%;
+  z-index: 50; }

@@ -14,7 +14,7 @@ export default class HeaderBanner extends Component {
     return (
       <div
         id="header-banner"
-        style={{backgroundColor: color}}>
+        style={{backgroundColor: color, opacity: this.props.visible ? '1' : '0'}}>
         { color }
       </div>
     )

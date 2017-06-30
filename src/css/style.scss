@@ -4,10 +4,12 @@
 @import "global/fonts";
 
 @import "bootstrap/scss/bootstrap";
+@import "components/buttons.scss";
 
-@import "components/HeaderBanner.scss";
-@import "components/Footer.scss";
 @import "components/ColorGem.scss";
+@import "components/Filters.scss";
+@import "components/Footer.scss";
+@import "components/HeaderBanner.scss";
 
 body {
   margin: 0;

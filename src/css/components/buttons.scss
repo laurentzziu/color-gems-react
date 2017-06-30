@@ -1,0 +1,12 @@
+.btn {
+  &.btn-purple {
+    @extend .btn;
+
+    background-color: $colors--purple;
+    color: white;
+
+    &.active, &:hover {
+      background-color: darken($colors--purple, 10%);
+    }
+  }
+}

@@ -56,7 +56,7 @@ export default class ColorGem extends Component {
 
     return (
       <CopyToClipboard onCopy={this.props.copiedToClipboard} text={color}>
-        <div style={boxStyle} className="m-3 color-box d-flex flex-wrap">
+        <div style={boxStyle} className="m-4 color-box d-flex flex-wrap">
           { this.renderVariationsBoxes() }
         </div>
       </CopyToClipboard>

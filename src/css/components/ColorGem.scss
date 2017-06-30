@@ -1,13 +1,13 @@
 .color-box {
-  height: $box-height;
-  width: $box-width;
   background-color: indigo;
   border-radius: 3rem;
+  cursor: pointer;
+  height: $box-height;
   overflow: hidden;
   position: relative;
   top: 0;
   transition: all 0.25s ease;
-  cursor: pointer;
+  width: $box-width;
 
   &:hover {
     position: relative;
@@ -15,10 +15,10 @@
   }
 
   .color-box-variation {
+    cursor: pointer;
     height: $box-height / 3;
     width: $box-width / 3;
     z-index: 1;
-    cursor: pointer;
     // mix-blend-mode: overlay;
 
     &:hover {

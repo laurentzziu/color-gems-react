@@ -1741,7 +1741,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     .form-inline .has-feedback .form-control-feedback {
       top: 0; } }
 
-.btn {
+.btn, .btn.btn-purple {
   display: inline-block;
   font-weight: normal;
   line-height: 1.25;
@@ -5988,39 +5988,51 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-#header-banner {
-  width: 100%;
-  text-align: center;
-  color: white;
-  padding: 0.5rem;
-  color: white;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
+.btn-purple.btn {
+  background-color: #4030e8;
+  color: white; }
+  .btn-purple.active.btn, .btn-purple.btn:hover {
+    background-color: #2717ce; }
+
+.color-box {
+  background-color: indigo;
+  border-radius: 3rem;
+  cursor: pointer;
+  height: 12rem;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  transition: all 0.25s ease;
+  width: 12rem; }
+  .color-box:hover {
+    position: relative;
+    top: -1rem; }
+  .color-box .color-box-variation {
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+    z-index: 1; }
+    .color-box .color-box-variation:hover {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+      z-index: 2; }
+
+#filters-wrapper .btn-group .btn {
+  cursor: pointer; }
 
 footer#app-footer {
   font-family: 'Lato', sans-serif;
   font-weight: 100; }
 
-.color-box {
-  height: 12rem;
-  width: 12rem;
-  background-color: indigo;
-  border-radius: 3rem;
-  overflow: hidden;
-  position: relative;
+#header-banner {
+  color: white;
+  padding: 0.5rem;
+  position: fixed;
+  text-align: center;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
   top: 0;
-  transition: all 0.25s ease;
-  cursor: pointer; }
-  .color-box:hover {
-    position: relative;
-    top: -1rem; }
-  .color-box .color-box-variation {
-    height: 4rem;
-    width: 4rem;
-    z-index: 1;
-    cursor: pointer; }
-    .color-box .color-box-variation:hover {
-      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-      z-index: 2; }
+  transition: background-color 0.2s ease, oapcity 0.5s ease;
+  width: 100%;
+  z-index: 50; }
 
 body {
   margin: 0;
