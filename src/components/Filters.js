@@ -12,9 +12,7 @@ export default class Filters extends Component {
   }
 
   render() {
-    const isHex = this.props.isHex;
-
-    return (
+      return (
       <div id="filters-wrapper" className="mb-3 mt-5 d-flex justify-content-center">
         <div id="color-mode">
           <span className="mr-2">RGBa</span>
