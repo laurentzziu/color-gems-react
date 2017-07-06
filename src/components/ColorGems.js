@@ -21,6 +21,7 @@ export default class ColorGems extends Component {
                   copiedToClipboard={this.props.copiedToClipboard}
                   isHex={this.props.isHex}
                   updateHoverColor={this.props.updateHoverColor}
+                  isDisplayGrid={this.props.isDisplayGrid}
                 />
       })}
       </div>

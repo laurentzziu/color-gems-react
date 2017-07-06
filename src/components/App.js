@@ -17,7 +17,7 @@ class App extends Component {
 
   state = {
     // list or grid
-    displayGrid: true,
+    isDisplayGrid: true,
     isHex: true,
     copied: false,
     hoverColor: '#ffffff',
@@ -34,17 +34,15 @@ class App extends Component {
   }
 
   changeColorModeToHex(value) {
-    this.setState({isHex: value});
+    this.setState({ isHex: value });
+  }
+
+  changeDisplayModeToGrid(value) {
+    this.setState({ isDisplayGrid: value })
   }
 
   setBannerVisible() {
-    // if (timeout) {
-    //   clearTimeout(timeout);
-    // }
     this.setState({ bannerVisible: true });
-    // let timeout = setTimeout(() => {
-    //   this.setState({ bannerVisible: false });
-    // }, 5000);
   }
 
   render() {
@@ -59,6 +57,8 @@ class App extends Component {
           <Header
             isHex={this.state.isHex}
             changeColorModeToHex={this.changeColorModeToHex}
+            changeDisplayModeToGrid={this.changeDisplayModeToGrid}
+            isDisplayGrid={this.state.isDisplayGrid}
           />
             <main>
               <ColorGems colors={settings.colors}
@@ -66,7 +66,7 @@ class App extends Component {
                 isHex={this.state.isHex}
                 hoverColor={this.state.hoverColor}
                 updateHoverColor={this.updateHoverColor}
-                displayGrid={this.state.displayGrid}
+                isDisplayGrid={this.state.isDisplayGrid}
               />
             </main>
           <Footer />

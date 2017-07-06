@@ -16,9 +16,9 @@ export default class ColorGem extends Component {
       let color = this.boxColor();
 
       if (i < times / 2 ) {
-        color = tinyColor(color).lighten((times - i) * 2).toString();
+        color = tinyColor(color).lighten((times - i)).toString();
       } else if (i > (times + 1) / 2) {
-        color = tinyColor(color).darken((times - i) * 2).toString();
+        color = tinyColor(color).darken(this.props.isDisplayGrid ? (times - i) : i).toString();
       }
 
       let style = {
@@ -48,10 +48,14 @@ export default class ColorGem extends Component {
     const color = this.boxColor();
     const tColor = tinyColor(color);
 
+    const isDisplayGrid = this.props.isDisplayGrid
+
     let boxStyle = {
       backgroundColor: color,
       boxShadow: `0 10px 18px -15px ${tColor.setAlpha(0.2).toHexString()},
-                  0px 6px 51px -7px ${tColor.setAlpha(0.6).toHexString()}`
+                  0px 6px 51px -7px ${tColor.setAlpha(0.6).toHexString()}`,
+      height: isDisplayGrid ? '12rem' : 'inherit' ,
+      width: isDisplayGrid ? '12rem' : 'inherit' ,
     }
 
     return (

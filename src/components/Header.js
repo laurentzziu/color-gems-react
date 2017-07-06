@@ -9,6 +9,8 @@ const Header = (props) => {
       <Filters
         isHex={props.isHex}
         changeColorModeToHex={props.changeColorModeToHex}
+        changeDisplayModeToGrid={props.changeDisplayModeToGrid}
+        isDisplayGrid={props.isDisplayGrid}
       />
     </header>
   )
