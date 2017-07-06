@@ -28,7 +28,7 @@ export default class ColorGem extends Component {
       boxes.push(
         <div key={`color-box-variation-${i}`} style={style}
           className="color-box-variation" aria-label="Copy"
-          onMouseEnter={() => this.props.updateHoverColor(color)}>
+          onMouseEnter={() => this.props.updateHoverColor(tinyColor(color).toHexString())}>
         </div>
       )
     }

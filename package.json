@@ -3,22 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^2.11.2",
     "bootstrap": "^4.0.0-alpha.6",
     "react": "^15.6.1",
     "react-autobind": "^1.0.6",
+    "react-bootstrap": "^0.31.0",
     "react-copy-to-clipboard": "^5.0.0",
     "react-dom": "^15.6.1",
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
-    "react-scripts": "1.0.7",
     "node-sass": "^4.5.3",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.0.2",
+    "react-scripts": "1.0.7",
     "sass-loader": "^6.0.6"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "build-css": "node-sass-chokidar --include-path ./src/css/style.scss --include-path ./node_modules src/css/style.css -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "PORT=8000 react-scripts start",
     "start": "npm-run-all -p watch-css start-js",

@@ -53,6 +53,7 @@ class App extends Component {
         <HeaderBanner
           color={this.state.hoverColor}
           visible={this.state.bannerVisible}
+          colorHex={this.state.colorHex}
         />
         <div className="content-wrapper container mt-5">
           <Header
