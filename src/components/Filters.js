@@ -12,14 +12,14 @@ export default class Filters extends Component {
   }
 
   render() {
-    const colorHex = this.props.colorHex;
+    const isHex = this.props.isHex;
 
     return (
       <div id="filters-wrapper" className="mb-3 mt-5 d-flex justify-content-center">
         <div id="color-mode">
           <span className="mr-2">RGBa</span>
           <Switch
-            defaultChecked={this.props.colorHex}
+            defaultChecked={this.props.isHex}
             onChange={(value) => this.props.changeColorModeToHex(value)}
           />
           <span className="ml-2">Hex</span>

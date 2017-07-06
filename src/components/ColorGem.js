@@ -38,7 +38,7 @@ export default class ColorGem extends Component {
   boxColor() {
     // Color is stored as RGB
     let color = this.props.color;
-    if (this.props.colorHex) {
+    if (this.props.isHex) {
       color = tinyColor(this.props.color).toHexString();
     }
     return color;

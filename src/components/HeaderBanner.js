@@ -11,8 +11,8 @@ export default class HeaderBanner extends Component {
 
   render() {
     const color = this.props.color;
-    const colorHex = this.props.colorHex;
-    const displayColor = colorHex ? tinyColor(color).toHexString() : tinyColor(color).toRgbString();
+    const isHex = this.props.isHex;
+    const displayColor = isHex ? tinyColor(color).toHexString() : tinyColor(color).toRgbString();
 
     return (
       <div

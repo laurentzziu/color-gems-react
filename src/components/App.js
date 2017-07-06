@@ -17,8 +17,8 @@ class App extends Component {
 
   state = {
     // list or grid
-    display: 'grid',
-    colorHex: true,
+    displayGrid: true,
+    isHex: true,
     copied: false,
     hoverColor: '#ffffff',
     bannerVisible: false
@@ -34,7 +34,7 @@ class App extends Component {
   }
 
   changeColorModeToHex(value) {
-    this.setState({colorHex: value});
+    this.setState({isHex: value});
   }
 
   setBannerVisible() {
@@ -53,19 +53,20 @@ class App extends Component {
         <HeaderBanner
           color={this.state.hoverColor}
           visible={this.state.bannerVisible}
-          colorHex={this.state.colorHex}
+          isHex={this.state.isHex}
         />
         <div className="content-wrapper container mt-5">
           <Header
-            colorHex={this.state.colorHex}
+            isHex={this.state.isHex}
             changeColorModeToHex={this.changeColorModeToHex}
           />
             <main>
               <ColorGems colors={settings.colors}
                 copiedToClipboard={this.copiedToClipboard}
-                colorHex={this.state.colorHex}
+                isHex={this.state.isHex}
                 hoverColor={this.state.hoverColor}
                 updateHoverColor={this.updateHoverColor}
+                displayGrid={this.state.displayGrid}
               />
             </main>
           <Footer />

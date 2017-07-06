@@ -7,7 +7,7 @@ const Header = (props) => {
       <h2 className="text-center mb-0 mt-5">Color Gems</h2>
       <h4 className="text-center mt-2">Experiment</h4>
       <Filters
-        colorHex={props.colorHex}
+        isHex={props.isHex}
         changeColorModeToHex={props.changeColorModeToHex}
       />
     </header>
