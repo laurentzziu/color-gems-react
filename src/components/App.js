@@ -3,6 +3,10 @@ import autoBind from 'react-autobind';
 
 import { settings } from '../settings';
 
+import Icon from 'antd/lib/icon';
+import notification from 'antd/lib/notification';
+import 'antd/lib/notification/style/css';
+
 import Header from './Header';
 import HeaderBanner from './HeaderBanner';
 import Footer from './Footer';
@@ -26,6 +30,7 @@ class App extends Component {
 
   copiedToClipboard(bool = true) {
     this.setState({ copied: bool });
+    this.openNotification();
   }
 
   updateHoverColor(color) {
@@ -44,6 +49,15 @@ class App extends Component {
   setBannerVisible() {
     this.setState({ bannerVisible: true });
   }
+
+  openNotification() {
+    notification['success']({
+      message: 'Success!',
+      description: 'Color code was copied to clipboard.',
+      placement: 'bottomRight',
+      icon: <Icon type="check-circle-o" style={{ color: this.state.hoverColor }} />
+    });
+  };
 
   render() {
     return (
